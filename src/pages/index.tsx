@@ -10,24 +10,6 @@ const formatTime = (value: number): string => {
 
 const Home: React.FC = () => {
   const countdown = useRef<HTMLElement>(null);
-  const stream = useRef();
-  const streamTitle = useRef();
-  const streamMainTitle = useRef();
-
-  useEffect(() => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-    const handleResize = () => {
-      // We execute the same script as before
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const countDownDate = new Date("Jan 1, 2023 00:00:00 GMT-0500").getTime();
   // change to false to enable countdown
