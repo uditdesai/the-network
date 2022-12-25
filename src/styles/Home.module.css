@@ -24,6 +24,10 @@
   height: auto;
 }
 
+.countdown {
+  font-size: 3rem;
+}
+
 .contact {
   height: 115px;
   display: flex;
