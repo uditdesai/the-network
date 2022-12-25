@@ -25,6 +25,17 @@
   height: auto;
 }
 
+.logoLink {
+  z-index: 1;
+  width: 24%;
+  height: 24%;
+  bottom: -1%;
+  right: -1%;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
 .countdown {
   font-size: 3rem;
 }

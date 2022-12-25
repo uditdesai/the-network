@@ -68,6 +68,12 @@ const Home: React.FC = () => {
     <main className={styles.main}>
       <div className={styles.logo}>
         <Image src="/logo.png" alt="The Network" width={1640} height={462} />
+        <a
+          href="https://www.simonefilms.com/"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.logoLink}
+        ></a>
       </div>
 
       <div>
