@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Seo from "../components/Seo";
 
 const formatTime = (value: number): string => {
   if (value < 10) {
@@ -66,6 +67,7 @@ const Home: React.FC = () => {
 
   return (
     <main className={styles.main}>
+      <Seo />
       <div className={styles.logo}>
         <Image src="/logo.png" alt="The Network" width={1640} height={462} />
         <a
