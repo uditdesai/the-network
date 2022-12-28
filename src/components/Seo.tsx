@@ -9,13 +9,13 @@ interface SeoProps {
 
 const Seo: React.FC<SeoProps> = ({
   title = "The Network",
-  description = "The Network",
-  image = "/images/shareCard.jpg",
+  description = "Based in New York City, The Network is Simone Films’ online multimedia platform that showcases its auteur-driven film and television projects.",
+  image = "/shareCard.jpg",
 }) => {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="icon" href="/images/favicon.png" />
+      <link rel="icon" href="/favicon.png" />
       <meta name="description" content={description} />
 
       <meta property="og:locale" content="en_US" />
