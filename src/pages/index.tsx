@@ -82,7 +82,7 @@ const Home: React.FC = () => {
         {/* <span ref={countdown} className={styles.countdown}>
           {date.day}:{date.hour}:{date.minute}:{date.second}
         </span> */}
-        <iframe
+        {/* <iframe
           style={{
             aspectRatio: "16 / 9",
             width: "100%",
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
       </div>
 
       <div className={styles.contact}>
