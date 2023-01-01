@@ -87,7 +87,7 @@ const Home: React.FC = () => {
             aspectRatio: "16 / 9",
             width: "100%",
           }}
-          src="https://www.youtube.com/embed/DJMpNe6UNgA"
+          src="https://www.youtube.com/embed/DJMpNe6UNgA?modestbranding=1"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
