@@ -95,23 +95,6 @@ const Home: React.FC = () => {
         ></iframe>
       </div>
 
-      <div className={styles.videoWrapper}>
-        {/* <span ref={countdown} className={styles.countdown}>
-          {date.day}:{date.hour}:{date.minute}:{date.second}
-        </span> */}
-        <iframe
-          style={{
-            aspectRatio: "16 / 9",
-            width: "100%",
-          }}
-          src="https://www.youtube.com/embed/DJMpNe6UNgA?modestbranding=1&vq=hd1080"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-
       <div className={styles.contact}>
         <a href="mailto:info@simonefilms.com">contact</a>
       </div>
