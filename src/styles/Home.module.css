@@ -1,9 +1,9 @@
 .main {
   width: 100vw;
-  min-height: 100vh;
-  min-height: 100dvh;
-  height: auto;
+  height: 100vh;
+  height: 100dvh;
   overflow-x: hidden;
+  overflow-y: hidden;
   background: white;
   display: flex;
   flex-direction: column;
@@ -41,14 +41,9 @@
 }
 
 .videoWrapper {
-  width: 50%;
-  height: auto;
+  height: 50%;
+  width: auto;
   aspect-ratio: 16 / 9;
-  margin-top: 6rem;
-}
-
-.videoWrapper:last-child {
-  margin-bottom: 6rem;
 }
 
 .contact {
@@ -68,11 +63,5 @@
 
   .videoWrapper {
     width: 100%;
-    height: auto;
-    margin-top: 4rem;
-  }
-
-  .videoWrapper:last-child {
-    margin-bottom: 4rem;
   }
 }
