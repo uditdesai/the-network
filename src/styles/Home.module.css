@@ -45,10 +45,40 @@
   height: auto;
   aspect-ratio: 16 / 9;
   margin-top: 6rem;
+  position: relative;
 }
 
 .videoWrapper:last-child {
   margin-bottom: 6rem;
+}
+
+.videoThumbnailWrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.videoThumbnailPlay {
+  position: absolute;
+  top: 40%;
+  z-index: 2;
+  width: 10%;
+}
+
+.videoEmbedWrapper {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .contact {
@@ -60,7 +90,7 @@
   color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .logo {
     max-width: 250px;
     width: 60%;
@@ -74,5 +104,13 @@
 
   .videoWrapper:last-child {
     margin-bottom: 4rem;
+  }
+
+  .videoThumbnailWrapper {
+    display: grid;
+  }
+
+  .videoEmbedWrapper {
+    display: none;
   }
 }
