@@ -86,7 +86,12 @@ const Home: React.FC = () => {
           href="https://www.youtube.com/watch?v=2zsXKM3axRQ"
         >
           <img src="/play.png" className={styles.videoThumbnailPlay} />
-          <Image src={Ep2Thumbnail} fill={true} alt="Tomorrow! Episode 2" />
+          <Image
+            src={Ep2Thumbnail}
+            fill={true}
+            alt="Tomorrow! Episode 2"
+            placeholder="blur"
+          />
         </a>
         <div className={styles.videoEmbedWrapper}>
           <iframe
@@ -109,7 +114,12 @@ const Home: React.FC = () => {
           href="https://www.youtube.com/watch?v=DJMpNe6UNgA"
         >
           <img src="/play.png" className={styles.videoThumbnailPlay} />
-          <Image src={Ep1Thumbnail} fill={true} alt="Tomorrow! Episode 1" />
+          <Image
+            src={Ep1Thumbnail}
+            fill={true}
+            alt="Tomorrow! Episode 1"
+            placeholder="blur"
+          />
         </a>
         <div className={styles.videoEmbedWrapper}>
           <iframe
