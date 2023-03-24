@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Seo from "../components/Seo";
+import Ep1Thumbnail from "../../public/epOneThumbnail.jpg";
+import Ep2Thumbnail from "../../public/epTwoThumbnail.jpg";
 
 const formatTime = (value: number): string => {
   if (value < 10) {
@@ -79,37 +81,59 @@ const Home: React.FC = () => {
       </div>
 
       <div className={styles.videoWrapper}>
-        {/* <span ref={countdown} className={styles.countdown}>
-          {date.day}:{date.hour}:{date.minute}:{date.second}
-        </span> */}
-        <iframe
-          style={{
-            aspectRatio: "16 / 9",
-            width: "100%",
-          }}
-          src="https://www.youtube.com/embed/2zsXKM3axRQ?modestbranding=1&version=3&vq=hd1080"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <a
+          className={styles.videoThumbnailWrapper}
+          href="https://www.youtube.com/watch?v=2zsXKM3axRQ"
+        >
+          <img src="/play.png" className={styles.videoThumbnailPlay} />
+          <Image
+            src={Ep2Thumbnail}
+            fill={true}
+            alt="Tomorrow! Episode 2"
+            placeholder="blur"
+          />
+        </a>
+        <div className={styles.videoEmbedWrapper}>
+          <iframe
+            style={{
+              aspectRatio: "16 / 9",
+              width: "100%",
+            }}
+            src="https://www.youtube.com/embed/2zsXKM3axRQ?modestbranding=1&version=3&vq=hd1080"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       <div className={styles.videoWrapper}>
-        {/* <span ref={countdown} className={styles.countdown}>
-          {date.day}:{date.hour}:{date.minute}:{date.second}
-        </span> */}
-        <iframe
-          style={{
-            aspectRatio: "16 / 9",
-            width: "100%",
-          }}
-          src="https://www.youtube.com/embed/DJMpNe6UNgA?modestbranding=1&version=3&vq=hd1080"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <a
+          className={styles.videoThumbnailWrapper}
+          href="https://www.youtube.com/watch?v=DJMpNe6UNgA"
+        >
+          <img src="/play.png" className={styles.videoThumbnailPlay} />
+          <Image
+            src={Ep1Thumbnail}
+            fill={true}
+            alt="Tomorrow! Episode 1"
+            placeholder="blur"
+          />
+        </a>
+        <div className={styles.videoEmbedWrapper}>
+          <iframe
+            style={{
+              aspectRatio: "16 / 9",
+              width: "100%",
+            }}
+            src="https://www.youtube.com/embed/DJMpNe6UNgA?modestbranding=1&version=3&vq=hd1080"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       <div className={styles.contact}>
