@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Seo from "../components/Seo";
 import Ep1Thumbnail from "../../public/epOneThumbnail.jpg";
 import Ep2Thumbnail from "../../public/epTwoThumbnail.jpg";
+import Ep3Thumbnail from "../../public/epThreeThumbnail.jpg";
 
 const formatTime = (value: number): string => {
   if (value < 10) {
@@ -78,6 +79,34 @@ const Home: React.FC = () => {
           rel="noreferrer"
           className={styles.logoLink}
         ></a>
+      </div>
+
+      <div className={styles.videoWrapper}>
+        <a
+          className={styles.videoThumbnailWrapper}
+          href="https://youtube.com/watch?v=EgVK0AZFWu4"
+        >
+          <img src="/play.png" className={styles.videoThumbnailPlay} />
+          <Image
+            src={Ep3Thumbnail}
+            fill={true}
+            alt="Tomorrow! Episode 3"
+            placeholder="blur"
+          />
+        </a>
+        <div className={styles.videoEmbedWrapper}>
+          <iframe
+            style={{
+              aspectRatio: "16 / 9",
+              width: "100%",
+            }}
+            src="https://www.youtube.com/embed/EgVK0AZFWu4?modestbranding=1&version=3&vq=hd1080"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
 
       <div className={styles.videoWrapper}>
